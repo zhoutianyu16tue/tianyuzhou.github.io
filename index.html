@@ -62,23 +62,53 @@
     <div id="experience">
     	<h1>Experience</h1>
         <div class="top-divider"></div>
-        <div class="content">
+        <div class="content">       
+            <div class="col">
+                <h2>MindSpore for Vision Transformer</h2>
+                <p>Transformer-like neural nets are so hot right. I could not resist the urge to get some hands-on experience with it. I think the best way is to read the <a href="https://arxiv.org/pdf/2010.11929.pdf">original paper</a>
+                    and start the implemtentation from scratch. That is how the project was born.
+                </p>
+                <p>The core of ViT archtecture is MultiheadAttention, which is available in <a href="https://www.mindspore.cn/docs/api/en/r1.5/api_python/mindspore.parallel.nn.html?highlight=multiheadattention#mindspore.parallel.nn.MultiHeadAttention">MindSpore</a> (and <a href="https://pytorch.org/docs/stable/generated/torch.nn.MultiheadAttention.html">Pytorch</a> too).
+                    It was that not hard to implement it yourself. You are guaranteed to get a much better understanding.
+                    [<a href="https://gitee.com/tianyu__zhou/mind-spore-vision-transformer">Code available here</a>]
+                </p>
+                </div>
+
             <div class="col">
             <h2>CANN Hardware Video Decoding for <a href="https://valkka.readthedocs.io/en/latest/">LibValkka</a></h2>
             <p>LibValkka is a python media-streaming framework that supports CPU/GPU video decoding backend.
 		    This work implements Huawei NPU acceleration to libValkka as a separate module.
-		    Now you get to decode 16-channel of 1080p video streams @30FPS without burden your CPU.</p>
+		    Now you get to decode 16-channel of 1080p video streams @30FPS without burdening your CPU.
+            [<a href="https://gitee.com/ElSampsa/valkka_cann">Code available here</a>]
+        </p>
             </div>
-<!--             
-            <div class="col col-mid">
-            <h2>Description of Work</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper aliquet. Pellentesque adipiscing pulvinar tortor, a adipiscing felis commodo in. Vestibulum dui magna, mattis in bibendum a, congue vitae lectus. In eu odio tortor, vel congue lacus. Donec viverra viverra eros, in egestas ligula adipiscing non. Morbi et ultricies sapien. Duis metus odio, commodo in tempor quis, euismod et ligula. Vivamus tristique condimentum </p>
-            </div> -->
-            
-<!--             <div class="col">
-            <h2>Description of Work</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras diam risus, dignissim pharetra sagittis sed, adipiscing nec felis. Maecenas non nulla eget ligula semper aliquet. Pellentesque adipiscing pulvinar tortor, a adipiscing felis commodo in. Vestibulum dui magna, mattis in bibendum a, congue vitae lectus. In eu odio tortor, vel congue lacus. Donec viverra viverra eros, in egestas ligula adipiscing non. Morbi et ultricies sapien. Duis metus odio, commodo in tempor quis, euismod et ligula. Vivamus tristique condimentum </p>
-            </div> -->
+        <div class="col">
+            <h2>Python ACL Samples</h2>
+            <p>ACL (Ascend Computing Language) provides a collection of C++/Python APIs for developing neural network inference applications on the Huawei NPU platform. These APIs are designed for image preprocessing,
+            media data processing, neural network and customized operators execution.</p>
+
+            <p>This repository provides Python programs that includes YOLOv3, YOLOv5, OpenPose etc.
+                They are meant not only for demonstration purpose but also help developers to quickly
+                adapt to Huawei AI stack. [<a href="https://gitee.com/tianyu__zhou/pyacl_samples">Code available here</a>]</p>
+            </div>
+            <div class="col">
+                <h2>Route Planning with Neural Networks</h2>
+                <p>Without a navigation software, how does a human find an efficient path from A to B with little knowledge
+                    of the road network?
+                    A quick answer is that, a human will gather information from road signs (direction and speed limit). Can we teach a neural network agent to navigate like a human?
+                </p>
+                <p>In my thesis work, I took a staggered approach by first training a simple NN to be greedy. Then I generated thousands of graphs with NetworkX with random edge attributes (simulating road traffic situation).
+                <p>The paths generated from A* and Dijkstra's algorithm are fed to a neural network agent so it can generate similar paths. The trained agent showed some very interesting characteristics.
+                    [<a href="https://www.diva-portal.org/smash/get/diva2:1249111/FULLTEXT01.pdf">Thesis available here</a>]</p>
+                </p>
+                </div>
+
+            <div class="col">
+                <h2>Multimodal Fusion for Human-Robot Collaboration</h2>
+                <p>I had the honor to work with Dr. Hongyi Liu as a research assistant during my pursuit of a master degree at KTH Royal Institute of Technology. In this work, an neural net architecture consists of three modalities: speech, hand motion (LeapMotion), and body motion (video) is proposed.</p>
+
+                <p>Three unimodal models were first trained to extract features, which were further fused for representation sharing. Experiments showed that the proposed multimodal-fusion model outperforms the three unimodal models. [<a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8558584">Paper available here</a>]</p>
+                </div>
         </div>    
         <div class="bottom-divider"></div>
     </div>
@@ -89,6 +119,11 @@
     	<h1>Education</h1>
         <div class="top-divider"></div>
         	<div class="content">
+                <p>I have obtained a Bachelor of Computer Engineering from Shanghai Jiao Tong University. I have enjoyed every minute of my 4-year stay in this wonderful city.</p>
+                <p>I moved to the Netherlands in 2016 and started my fantastic journey in Europe. I was honored to be
+                    accepted by European Institute of Innovation and Technology and studied my master program in Data Science and Machine Learning. It was an awesome opportunity to be able to study both in Eindhoven,
+                    the Netherlands, and Stockholm, Sweden.
+                </p>
             </div>
         <div class="bottom-divider"></div>
     </div>
